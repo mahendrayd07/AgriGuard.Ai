@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriGuard AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🌿 AgriGuard AI</h1>
+    <p class="subtitle">Crop disease and pest screening assistant</p>
+
+    <section class="card">
+      <label for="crop">Select crop</label>
+      <select id="crop">
+        <option value="tomato">Tomato</option>
+        <option value="potato">Potato</option>
+        <option value="rice">Rice</option>
+      </select>
+
+      <label for="image">Upload a clear leaf image</label>
+      <input id="image" type="file" accept="image/*" />
+
+      <img id="preview" alt="Selected leaf preview" hidden />
+
+      <button id="analyzeButton" type="button">Analyze Image</button>
+    </section>
+
+    <section id="result" class="card result" hidden>
+      <h2>Screening Result</h2>
+      <p id="prediction"></p>
+      <p id="confidence"></p>
+      <p id="severity"></p>
+      <p id="advisory"></p>
+      <p class="notice">
+        This is an AI screening result, not a guaranteed diagnosis.
+        Follow local agricultural guidance and consult an expert if unsure.
+      </p>
+    </section>
+  </main>
+  <button id="historyButton" type="button">View Saved Reports</button>
+
+  <section id="history" class="card" hidden>
+    <h2>Saved Reports</h2>
+    <div id="historyContent"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

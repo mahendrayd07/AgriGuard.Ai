@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f3f8f0;
+  color: #173b1c;
+}
+
+.container {
+  width: min(700px, 92%);
+  margin: 50px auto;
+}
+
+h1 {
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 0;
+  text-align: center;
+  color: #527457;
+}
+
+.card {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 14px rgba(24, 70, 32, 0.12);
+}
+
+label, input, select, button {
+  display: block;
+  width: 100%;
+}
+
+label {
+  margin: 16px 0 8px;
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+input, select {
+  border: 1px solid #b8cfb9;
+}
+
+button {
+  margin-top: 24px;
+  border: 0;
+  background: #26753a;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d5c2d;
+}
+
+#preview {
+  width: 100%;
+  max-height: 320px;
+  margin-top: 16px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.notice {
+  color: #705900;
+  font-size: 14px;
+}
+
+.treatment-list {
+  margin-top: 8px;
+  padding-left: 22px;
+  line-height: 1.5;
+}
+
+.treatment-list li {
+  margin-bottom: 8px;
+}
+.report-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #d7e5d5;
+}
+
+.report-item:last-child {
+  border-bottom: 0;
+}
